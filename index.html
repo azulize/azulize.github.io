@@ -1,0 +1,189 @@
+---
+layout: default
+title: "Azulize — Calm, ad-free apps for curious kids"
+description: >-
+  Azulize is a U.S. software studio making calm, ad-free, kid-safe apps for
+  iPad and iPhone. No ads, no tracking, no data collection — just delightful
+  play you can feel good about.
+---
+
+<!-- Hero -------------------------------------------------------------------->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">A kids app studio · Made in the USA</p>
+      <h1 class="hero-title">Screen time you can<br><span class="accent">actually feel good about.</span></h1>
+      <p class="hero-sub">
+        Azulize builds calm, ad-free apps for curious kids — one simple idea per
+        app, beautifully made. No ads. No tracking. Nothing to collect.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#games">Explore the games</a>
+        <a class="btn btn-ghost" href="#values">Why parents trust us</a>
+      </div>
+      <ul class="hero-badges" aria-label="Our promises">
+        <li><span aria-hidden="true">🛡️</span> Kid-safe by design</li>
+        <li><span aria-hidden="true">🚫</span> No ads, ever</li>
+        <li><span aria-hidden="true">🔒</span> Privacy-first</li>
+      </ul>
+    </div>
+
+    <div class="hero-art" aria-hidden="false">
+      <div class="hero-blob"></div>
+      {% include milo.svg %}
+      <p class="hero-art-caption">Say hi to <strong>Milo</strong> 👋</p>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip ------------------------------------------------------------->
+<section class="trust-strip">
+  <div class="container trust-inner">
+    <span>✔ No third-party ads</span>
+    <span>✔ No analytics or trackers</span>
+    <span>✔ Parental gate on every exit</span>
+    <span>✔ Games play offline</span>
+    <span>✔ COPPA-minded</span>
+  </div>
+</section>
+
+<!-- Games ------------------------------------------------------------------->
+<section class="section" id="games">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">The catalog</p>
+      <h2>Eighteen apps. One simple idea each.</h2>
+      <p class="section-lead">
+        A whole family of tiny, focused apps — each teaches or delights with a
+        single, calm mechanic. Grouped by the kind of play your child loves.
+      </p>
+    </header>
+
+    {% for tier in site.data.tiers %}
+      {% assign group = site.data.games | where: 'tier', tier.key %}
+      {% if group.size > 0 %}
+        <div class="tier">
+          <div class="tier-head">
+            <h3 class="tier-title">{{ tier.label }}</h3>
+            <p class="tier-blurb">{{ tier.blurb }}</p>
+          </div>
+          <div class="games-grid">
+            {% for g in group %}
+              <article class="game-card">
+                <div class="game-tile" style="--from: {{ g.gradient[0] }}; --to: {{ g.gradient[1] }};">
+                  <span class="game-emoji" aria-hidden="true">{{ g.emoji }}</span>
+                  <span class="badge">Ages {{ g.ages }}</span>
+                </div>
+                <div class="game-info">
+                  <h3>{{ g.name }}</h3>
+                  <p class="game-mechanic">{{ g.mechanic }}</p>
+                  <p class="game-desc">{{ g.description }}</p>
+                  {% if g.appstore_url and g.appstore_url != "" %}
+                    <a class="btn btn-appstore" href="{{ g.appstore_url }}" rel="noopener">App Store</a>
+                  {% endif %}
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Values ------------------------------------------------------------------>
+<section class="section section-alt" id="values">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Why Azulize</p>
+      <h2>Built for kids. Designed to earn a parent's trust.</h2>
+    </header>
+
+    <div class="values-grid">
+      <article class="value">
+        <span class="value-icon" aria-hidden="true">🛡️</span>
+        <h3>Kid-safe by design</h3>
+        <p>No ads, no pop-ups, no links out to the web without a parental gate. What a child sees is only ever the game.</p>
+      </article>
+      <article class="value">
+        <span class="value-icon" aria-hidden="true">🔒</span>
+        <h3>No accounts, no profiles</h3>
+        <p>We don't ask for names, emails or logins, and we build no profile of your child. Game progress stays on the device.</p>
+      </article>
+      <article class="value">
+        <span class="value-icon" aria-hidden="true">📵</span>
+        <h3>No trackers or analytics</h3>
+        <p>No third-party SDKs quietly watching. No advertising identifiers. No profiles built about your child.</p>
+      </article>
+      <article class="value">
+        <span class="value-icon" aria-hidden="true">👨‍👩‍👧</span>
+        <h3>Made with parents</h3>
+        <p>Purchases and settings live behind a parental gate. You stay in control of spending and screen time.</p>
+      </article>
+      <article class="value">
+        <span class="value-icon" aria-hidden="true">🎯</span>
+        <h3>One idea per app</h3>
+        <p>Each app does a single thing well — calm, uncluttered and easy for small hands to understand on their own.</p>
+      </article>
+      <article class="value">
+        <span class="value-icon" aria-hidden="true">✈️</span>
+        <h3>Works offline</h3>
+        <p>No connection required. Perfect for car rides, flights and waiting rooms — no surprises, no interruptions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- About ------------------------------------------------------------------->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-text">
+      <p class="eyebrow">About Azulize</p>
+      <h2>A small studio with a simple belief.</h2>
+      <p>
+        Azulize LLC is a {{ site.company.state }}-based software studio. We make
+        the kind of children's apps we'd happily hand our own kids: calm,
+        beautiful and free of the tricks that fill so much of the App Store —
+        no ads, no manipulative pop-ups, no data harvesting.
+      </p>
+      <p>
+        Our apps live under <strong>KidsStudio</strong>, a catalog of eighteen
+        apps, each focused on one gentle idea. Guiding every screen is
+        <strong>Milo</strong>, our friendly mascot, cheering kids on as they
+        color, connect, match and create.
+      </p>
+      <p>
+        We're a U.S. limited liability company built for the long haul — small
+        by choice, careful by habit.
+      </p>
+    </div>
+    <aside class="about-card">
+      <h3>At a glance</h3>
+      <dl class="facts">
+        <div><dt>Studio</dt><dd>Azulize LLC</dd></div>
+        <div><dt>Home</dt><dd>{{ site.company.state }}, {{ site.company.country }}</dd></div>
+        <div><dt>Catalog</dt><dd>KidsStudio · 18 apps</dd></div>
+        <div><dt>Mascot</dt><dd>Milo 👋</dd></div>
+        <div><dt>Platforms</dt><dd>iPad &amp; iPhone</dd></div>
+        <div><dt>Personal data</dt><dd>None</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- Contact ----------------------------------------------------------------->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <h2>Questions, press or support?</h2>
+      <p>Parents, journalists and fellow makers are all welcome. We reply within one business day.</p>
+      <a class="btn btn-primary" href="mailto:{{ site.email }}">Email {{ site.email }}</a>
+      <p class="contact-legal">
+        By the way — here's our
+        <a href="{{ '/legal/privacy/' | relative_url }}">Privacy Policy</a>,
+        <a href="{{ '/legal/terms/' | relative_url }}">Terms</a> and
+        <a href="{{ '/legal/cookies/' | relative_url }}">Cookie Policy</a>.
+      </p>
+    </div>
+  </div>
+</section>

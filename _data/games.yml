@@ -1,0 +1,234 @@
+# =============================================================================
+#  KidsStudio catalog — 18 apps, one mechanic per app.
+#
+#  tier:         groups the app on the homepage (see _data/tiers.yml)
+#  ages:         parent-facing age range, shown as a badge
+#  appstore_url: leave "" until the app is live, then paste the App Store link.
+#                When set, the card shows a real "App Store" button.
+#  gradient:     [from, to] — colors for the app tile.
+#
+#  To add or edit a title, copy a block and fill it in — the homepage grid and
+#  the legal pages' "covered apps" list update automatically.
+# =============================================================================
+
+# ---- Foundation favorites ---------------------------------------------------
+- name: Kids Color
+  tier: foundation
+  emoji: "🎨"
+  mechanic: Coloring
+  ages: "2–8"
+  tagline: Coloring that never spills
+  description: >-
+    Finger-paint hand-drawn scenes with a soft engine that keeps color inside
+    the lines. Ten themes and 150 pictures to bring to life.
+  appstore_url: ""
+  gradient: ["#55B7E8", "#3E8FD0"]
+
+- name: Kids Dots
+  tier: foundation
+  emoji: "🔢"
+  mechanic: Connect the dots
+  ages: "2–8"
+  tagline: Follow the dots, reveal the picture
+  description: >-
+    Join the numbered dots in order to uncover a cheerful picture, then
+    celebrate with confetti. Six themes and over a hundred puzzles.
+  appstore_url: ""
+  gradient: ["#6C7BD6", "#5560BE"]
+
+- name: Kids Puzzle
+  tier: foundation
+  emoji: "🧩"
+  mechanic: Jigsaw
+  ages: "2–8"
+  tagline: Pieces that snap just right
+  description: >-
+    Drag and rotate chunky jigsaw pieces that click satisfyingly into place.
+    Seven themes with easy and older layouts so the challenge grows.
+  appstore_url: ""
+  gradient: ["#4FC0C9", "#3499A6"]
+
+- name: Kids Memory
+  tier: foundation
+  emoji: "🃏"
+  mechanic: Match the pairs
+  ages: "2–8"
+  tagline: Flip, match, play together
+  description: >-
+    Flip cards to find matching pairs — solo or with up to three players
+    sharing the iPad. Six themes and a friendly scoreboard.
+  appstore_url: ""
+  gradient: ["#F0A64C", "#E1873A"]
+
+- name: Kids Maze
+  tier: foundation
+  emoji: "🌀"
+  mechanic: Maze
+  ages: "2–8"
+  tagline: Find the way out, four ways
+  description: >-
+    Trace a path from start to finish across four playful maze modes, with
+    Milo leading the way through twenty-four hand-made levels.
+  appstore_url: ""
+  gradient: ["#8E7CD8", "#6F5CC4"]
+
+- name: Kids Trace
+  tier: foundation
+  emoji: "✏️"
+  mechanic: Handwriting
+  ages: "2–8"
+  tagline: Trace letters, numbers & shapes
+  description: >-
+    Guided tracing that celebrates every attempt. Pre-writing, shapes, numbers
+    and letters — it doubles as a gentle first step into English.
+  appstore_url: ""
+  gradient: ["#E86F8E", "#D2517A"]
+
+# ---- Numbers & music --------------------------------------------------------
+- name: Kids Shapes
+  tier: numbers-music
+  emoji: "🔺"
+  mechanic: Classification
+  ages: "2–6"
+  tagline: Sort the world into shapes
+  description: >-
+    Match and sort by shape, color and size into the right spots — early
+    classification play, made calm and playful.
+  appstore_url: ""
+  gradient: ["#5BB98C", "#3F9E73"]
+
+- name: Kids Count
+  tier: numbers-music
+  emoji: "➕"
+  mechanic: Counting & maths
+  ages: "3–7"
+  tagline: Counting that clicks
+  description: >-
+    Tap the right answer to learn counting, more-or-less and first sums, with
+    friendly illustrated tiles and no penalty for wrong guesses.
+  appstore_url: ""
+  gradient: ["#4FB0D8", "#3A8FBE"]
+
+- name: Kids Piano
+  tier: numbers-music
+  emoji: "🎹"
+  mechanic: Music
+  ages: "3–8"
+  tagline: A first instrument, no wrong notes
+  description: >-
+    A colorful keyboard for free play, follow-the-note guides and falling-tile
+    rhythm games — with a catalog of twenty-two songs.
+  appstore_url: ""
+  gradient: ["#8A7BE0", "#6E5FCB"]
+
+# ---- Puzzles & logic --------------------------------------------------------
+- name: Kids Slide
+  tier: puzzles-logic
+  emoji: "📦"
+  mechanic: Sokoban
+  ages: "4–7"
+  tagline: Push every box home
+  description: >-
+    Slide boxes onto their marks in this cozy sokoban puzzler, with unlimited
+    undo and twenty-four hand-built levels.
+  appstore_url: ""
+  gradient: ["#49C1A6", "#33A187"]
+
+- name: Kids Sort
+  tier: puzzles-logic
+  emoji: "🧪"
+  mechanic: Water sort
+  ages: "4–7"
+  tagline: Pour until it's tidy
+  description: >-
+    Pour colors between tubes until each one is neat and single-colored. A
+    calm, tidy, deeply satisfying logic puzzle.
+  appstore_url: ""
+  gradient: ["#EF7E6B", "#DA5A48"]
+
+- name: Kids Pop
+  tier: puzzles-logic
+  emoji: "🫧"
+  mechanic: Arcade
+  ages: "3–6"
+  tagline: Tap, pop, giggle
+  description: >-
+    Tap to pop cheerful themed objects as they float down — quick, joyful
+    arcade fun with no penalties and six colorful worlds.
+  appstore_url: ""
+  gradient: ["#F07EA0", "#E15C86"]
+
+- name: Kids Tilt
+  tier: puzzles-logic
+  emoji: "⚪"
+  mechanic: Marble maze
+  ages: "4–7"
+  tagline: Tilt, roll, reach the goal
+  description: >-
+    Tilt the iPad to roll a marble to the goal, dodging holes and collecting
+    stars across twenty-four physics levels.
+  appstore_url: ""
+  gradient: ["#8FCB5A", "#6FAE3C"]
+
+# ---- Pretend play -----------------------------------------------------------
+- name: Kids Doctor
+  tier: pretend-play
+  emoji: "🩺"
+  mechanic: Role-play
+  ages: "3–7"
+  tagline: Make every patient better
+  description: >-
+    Play vet: match the right treatment to each friendly animal's symptom
+    until everyone is smiling again. Thirty gentle cases.
+  appstore_url: ""
+  gradient: ["#EF7E7E", "#D85F5F"]
+
+- name: Kids Chef
+  tier: pretend-play
+  emoji: "🍳"
+  mechanic: Cooking
+  ages: "3–7"
+  tagline: Cook it in the right order
+  description: >-
+    Follow silly recipes step by step in the correct order — a pretend kitchen
+    full of happy accidents and nothing to clean up.
+  appstore_url: ""
+  gradient: ["#F0B24C", "#DC943A"]
+
+- name: Kids Stickers
+  tier: pretend-play
+  emoji: "🌟"
+  mechanic: Creative sandbox
+  ages: "3–7"
+  tagline: Stick, arrange, imagine
+  description: >-
+    Decorate scenes with draggable stickers that save as you go — no goals, no
+    timers, just wide-open creativity. Our only sandbox.
+  appstore_url: ""
+  gradient: ["#F4B740", "#E19E2A"]
+
+# ---- For bigger kids --------------------------------------------------------
+- name: Kids Sudoku
+  tier: bigger-kids
+  emoji: "🧮"
+  mechanic: Sudoku
+  ages: "6+"
+  tagline: Sudoku, made approachable
+  description: >-
+    A gentle way into sudoku with color-coded hints that teach the rules by
+    sight. Sixty puzzles across three themed adventures.
+  appstore_url: ""
+  gradient: ["#5B6BB8", "#3B4A93"]
+
+# ---- Learning to read -------------------------------------------------------
+- name: Kids Words
+  tier: learning-to-read
+  emoji: "📖"
+  mechanic: Learn to read
+  ages: "3–7"
+  tagline: First words, real reading
+  description: >-
+    Learn to read by spelling, picking and building fifty picture words — with
+    genuine English and Spanish content, not machine translation.
+  appstore_url: ""
+  gradient: ["#4FC0A8", "#369E88"]

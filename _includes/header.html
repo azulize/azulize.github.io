@@ -1,0 +1,24 @@
+{%- assign home = '/' | relative_url -%}
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="{{ home }}" aria-label="Azulize — home">
+      {% include logo.svg %}
+      <span class="brand-name">Azulize</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="{{ home }}#games">Games</a>
+      <a href="{{ home }}#values">Why Azulize</a>
+      <a href="{{ home }}#about">About</a>
+      <a href="{{ home }}#contact">Contact</a>
+      <a class="nav-cta" href="mailto:{{ site.email }}">Get in touch</a>
+    </nav>
+
+    <button type="button" class="nav-toggle" id="nav-toggle"
+            aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>

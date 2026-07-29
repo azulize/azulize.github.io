@@ -1,0 +1,52 @@
+# =============================================================================
+#  Azulize LLC — site configuration
+#  https://www.azulize.com
+# =============================================================================
+
+title: Azulize
+tagline: Calm, ad-free apps for curious kids
+description: >-
+  Azulize is a U.S. software studio making calm, ad-free, kid-safe apps for
+  iPad and iPhone. No ads, no tracking, no data collection — just delightful,
+  screen-time you can feel good about.
+
+url: "https://www.azulize.com"
+baseurl: ""
+lang: en
+
+# Contact
+email: support@azulize.com
+
+# Reusable company facts (surfaced in the footer and legal pages)
+company:
+  name: Azulize
+  legal_name: Azulize LLC
+  studio: KidsStudio
+  mascot: Milo
+  state: Wyoming
+  country: United States
+  email: support@azulize.com
+  founded: 2025
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# This site ships its own layout, styles and scripts — no external theme.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - LICENSE
+  - .bundle
+  - .jekyll-cache
+  - node_modules
+  - assets/img/favicon-source.svg

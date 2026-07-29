@@ -1,0 +1,7 @@
+---
+# Front matter (even empty) makes Jekyll process the Liquid tag below.
+---
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml

@@ -1,0 +1,41 @@
+{%- assign home = '/' | relative_url -%}
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="{{ home }}" aria-label="Azulize — home">
+        {% include logo.svg %}
+        <span class="brand-name">Azulize</span>
+      </a>
+      <p class="footer-tagline">{{ site.tagline }}</p>
+      <p class="footer-note">
+        Calm, ad-free, kid-safe apps. No ads, no tracking, no data collection.
+      </p>
+    </div>
+
+    <nav class="footer-col" aria-label="Explore">
+      <h2 class="footer-heading">Explore</h2>
+      <a href="{{ home }}#games">Games</a>
+      <a href="{{ home }}#values">Why Azulize</a>
+      <a href="{{ home }}#about">About</a>
+      <a href="{{ home }}#contact">Contact</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="Legal">
+      <h2 class="footer-heading">Legal</h2>
+      <a href="{{ '/legal/privacy/' | relative_url }}">Privacy Policy</a>
+      <a href="{{ '/legal/terms/' | relative_url }}">Terms &amp; Conditions</a>
+      <a href="{{ '/legal/cookies/' | relative_url }}">Cookie Policy</a>
+    </nav>
+
+    <div class="footer-col" aria-label="Contact">
+      <h2 class="footer-heading">Say hello</h2>
+      <a class="footer-mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <p class="footer-note">We reply within one business day.</p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <small>© {{ 'now' | date: "%Y" }} {{ site.company.legal_name }}. All rights reserved.</small>
+    <small>{{ site.company.legal_name }} · a {{ site.company.state }}, {{ site.company.country }} company.</small>
+  </div>
+</footer>
