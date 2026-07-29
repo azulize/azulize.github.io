@@ -7,7 +7,7 @@ summary: >-
   The rules for using our apps and this website. In plain terms: enjoy the
   apps, don't misuse them, and remember they're provided for family use.
 description: >-
-  Terms & Conditions for Azulize LLC's KidsStudio apps and azulize.com,
+  Terms & Conditions for Azulize LLC's apps and azulize.com,
   including license, in-app purchases, and governing law.
 ---
 
@@ -15,7 +15,7 @@ description: >-
 
 These Terms &amp; Conditions ("**Terms**") are a legal agreement between you and
 **{{ site.company.legal_name }}** ("**Azulize**", "**we**", "**us**") governing
-your use of our mobile apps published under **KidsStudio** (the "**Apps**") and
+your use of our mobile apps (the "**Apps**") and
 this website, [www.azulize.com]({{ site.url }}) (the "**Site**").
 
 By downloading, installing, or using an App or the Site, you agree to these
@@ -80,8 +80,8 @@ or any related systems.
 
 ## 6. Intellectual property
 
-The Apps, the Site, and all of their content — including the **Azulize** and
-**KidsStudio** names, the **Milo** character, artwork, illustrations, audio,
+The Apps, the Site, and all of their content — including the **Azulize** name,
+the **Milo** character, artwork, illustrations, audio,
 text, and software — are owned by Azulize or our licensors and are protected by
 copyright, trademark and other laws. Except for the limited license in Section 3,
 these Terms grant you no rights in our intellectual property.
@@ -122,12 +122,13 @@ the updated Terms.
 
 ## 11. Governing law
 
-These Terms are governed by the laws of the **State of {{ site.company.state }},
-{{ site.company.country }}**, without regard to its conflict-of-laws rules. To
-the extent a dispute is not subject to Apple's EULA or App Store terms, you agree
-that it will be resolved in the state or federal courts located in
-{{ site.company.state }}, and you consent to their jurisdiction. Nothing in these
-Terms limits any mandatory consumer-protection rights you may have where you live.
+These Terms are governed by the laws of the **{{ site.company.country }}** and,
+where applicable, the state in which Azulize is organized, without regard to
+conflict-of-laws rules. To the extent a dispute is not subject to Apple's EULA or
+App Store terms, you agree that it will be resolved in a court of competent
+jurisdiction in the United States, and you consent to its jurisdiction. Nothing in
+these Terms limits any mandatory consumer-protection rights you may have where you
+live.
 
 ## 12. Contact us
 

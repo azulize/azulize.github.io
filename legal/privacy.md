@@ -7,14 +7,14 @@ summary: >-
   The short version: our apps are built for children, and we do not collect
   personal information from anyone. No accounts, no ads, no trackers.
 description: >-
-  Azulize LLC Privacy Policy for the KidsStudio apps and azulize.com. We do not
+  Azulize LLC Privacy Policy for the Azulize apps and azulize.com. We do not
   collect personal information, use no third-party analytics and serve no ads.
 ---
 
 ## Our privacy promise
 
 {{ site.company.legal_name }} ("**Azulize**", "**we**", "**us**") makes calm,
-ad-free apps for children under the **KidsStudio** name. We designed our apps to
+ad-free apps for children. We designed our apps to
 be privacy-first: **no ads, no tracking, and no personal information collected
 from you or your child.** The one exception is the purchase information needed to
 sell and restore optional upgrades, which is handled by Apple and our purchase
@@ -26,12 +26,12 @@ mobile apps (together, the "**Apps**") and to this website,
 
 ### Apps covered by this policy
 
-This policy covers every app we publish under KidsStudio, including:
+This policy covers every app we publish, including:
 
 {% for g in site.data.games %}- **{{ g.name }}** — {{ g.mechanic | downcase }}
 {% endfor %}
 
-New KidsStudio apps are covered by this policy from the day they launch.
+New apps are covered by this policy from the day they launch.
 
 ## Information we do **not** collect
 
@@ -129,7 +129,7 @@ your control.
 
 ## International users
 
-Azulize is based in the {{ site.company.state }}, {{ site.company.country }}. The
+Azulize is based in the {{ site.company.country }}. The
 Apps can be used worldwide. Because we do not collect personal information, there
 is no personal data to transfer across borders.
 

@@ -1,8 +1,8 @@
 # Azulize — company website
 
 Marketing website and shared legal center for **Azulize LLC**, a U.S. software
-studio that makes calm, ad-free, kid-safe apps for iPad and iPhone under the
-**KidsStudio** name (mascot: **Milo**).
+studio that makes calm, ad-free, kid-safe apps for iPad and iPhone
+(mascot: **Milo**).
 
 - **Live site:** <https://www.azulize.com>
 - **Repo:** `azulize.github.io` (GitHub Pages, user site)
@@ -17,9 +17,8 @@ studio that makes calm, ad-free, kid-safe apps for iPad and iPhone under the
 |---|---|
 | Legal name | **Azulize LLC** |
 | Brand | Azulize |
-| Studio | KidsStudio |
 | Mascot | Milo |
-| Registered | **Wyoming, United States** |
+| Registered | **United States** |
 | Founded | 2025 |
 | Contact | support@azulize.com |
 | Domain | www.azulize.com |
@@ -32,10 +31,10 @@ truth.
 
 ## What the site does
 
-1. **Markets the catalog** — a homepage that lists every KidsStudio app,
+1. **Markets the catalog** — a homepage that lists every app,
    grouped into age-based tiers.
 2. **Hosts the shared legal center** — one Privacy Policy, Terms of Service and
-   Cookie Policy that apply to *all* KidsStudio apps, linked from inside every
+   Cookie Policy that apply to *all* apps, linked from inside every
    app:
    - `/legal/privacy/`
    - `/legal/terms/`
