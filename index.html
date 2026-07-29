@@ -30,7 +30,7 @@ description: >-
 
     <div class="hero-art" aria-hidden="false">
       <div class="hero-blob"></div>
-      {% include milo.svg %}
+      <img class="hero-milo" src="{{ '/assets/img/milo.png' | relative_url }}" alt="Milo, the Azulize mascot, waving hello" width="800" height="1000">
       <p class="hero-art-caption">Say hi to <strong>Milo</strong> 👋</p>
     </div>
   </div>
@@ -69,9 +69,10 @@ description: >-
           </div>
           <div class="games-grid">
             {% for g in group %}
+              {% assign icon = g.name | slugify %}
               <article class="game-card">
                 <div class="game-tile" style="--from: {{ g.gradient[0] }}; --to: {{ g.gradient[1] }};">
-                  <span class="game-emoji" aria-hidden="true">{{ g.emoji }}</span>
+                  <img class="game-icon" src="{{ '/assets/img/games/' | append: icon | append: '.png' | relative_url }}" alt="{{ g.name }} app icon" width="88" height="88" loading="lazy">
                   <span class="badge">Ages {{ g.ages }}</span>
                 </div>
                 <div class="game-info">
@@ -141,16 +142,15 @@ description: >-
       <p class="eyebrow">About Azulize</p>
       <h2>A small studio with a simple belief.</h2>
       <p>
-        Azulize LLC is a {{ site.company.state }}-based software studio. We make
+        Azulize LLC is a U.S.-based software studio. We make
         the kind of children's apps we'd happily hand our own kids: calm,
         beautiful and free of the tricks that fill so much of the App Store —
         no ads, no manipulative pop-ups, no data harvesting.
       </p>
       <p>
-        Our apps live under <strong>KidsStudio</strong>, a catalog of eighteen
-        apps, each focused on one gentle idea. Guiding every screen is
-        <strong>Milo</strong>, our friendly mascot, cheering kids on as they
-        color, connect, match and create.
+        Our catalog is a family of eighteen apps, each focused on one gentle
+        idea. Guiding every screen is <strong>Milo</strong>, our friendly
+        mascot, cheering kids on as they color, connect, match and create.
       </p>
       <p>
         We're a U.S. limited liability company built for the long haul — small
@@ -161,8 +161,8 @@ description: >-
       <h3>At a glance</h3>
       <dl class="facts">
         <div><dt>Studio</dt><dd>Azulize LLC</dd></div>
-        <div><dt>Home</dt><dd>{{ site.company.state }}, {{ site.company.country }}</dd></div>
-        <div><dt>Catalog</dt><dd>KidsStudio · 18 apps</dd></div>
+        <div><dt>Home</dt><dd>{{ site.company.country }}</dd></div>
+        <div><dt>Catalog</dt><dd>18 apps</dd></div>
         <div><dt>Mascot</dt><dd>Milo 👋</dd></div>
         <div><dt>Platforms</dt><dd>iPad &amp; iPhone</dd></div>
         <div><dt>Personal data</dt><dd>None</dd></div>

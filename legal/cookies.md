@@ -7,14 +7,14 @@ summary: >-
   The short version: our apps use no cookies, and this website sets no
   tracking or advertising cookies of its own.
 description: >-
-  Cookie Policy for Azulize LLC's KidsStudio apps and azulize.com. Our apps use
+  Cookie Policy for Azulize LLC's apps and azulize.com. Our apps use
   no cookies; the website sets no advertising or analytics cookies.
 ---
 
 ## What this policy covers
 
 This Cookie Policy explains how cookies and similar technologies are — and are
-**not** — used across **{{ site.company.legal_name }}**'s **KidsStudio** apps
+**not** — used across **{{ site.company.legal_name }}**'s apps
 (the "**Apps**") and this website, [www.azulize.com]({{ site.url }}) (the
 "**Site**").
 
