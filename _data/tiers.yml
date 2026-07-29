@@ -1,0 +1,26 @@
+# Catalog tiers — controls the order and grouping of the games section.
+# Each game in _data/games.yml carries a matching `tier:` key.
+
+- key: foundation
+  label: Foundation favorites
+  blurb: The original six — the calm classics that started it all.
+
+- key: numbers-music
+  label: Numbers & music
+  blurb: Gentle early maths, shapes and sound for the littlest players.
+
+- key: puzzles-logic
+  label: Puzzles & logic
+  blurb: Bite-size brain teasers with levels, best times and sticker albums.
+
+- key: pretend-play
+  label: Pretend play
+  blurb: Imaginative role-play where your child runs the show.
+
+- key: bigger-kids
+  label: For bigger kids
+  blurb: A step up for confident players who've outgrown the basics.
+
+- key: learning-to-read
+  label: Learning to read
+  blurb: Our most educational title, built on genuine, native word content.

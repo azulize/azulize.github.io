@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="legal">
+  <div class="container legal-container">
+    <header class="legal-head">
+      <p class="eyebrow">Legal</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p class="legal-summary">{{ page.summary }}</p>{% endif %}
+      <p class="legal-meta">
+        Last updated: <time datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated | date: "%B&nbsp;%-d,&nbsp;%Y" }}</time>
+      </p>
+    </header>
+
+    <nav class="legal-tabs" aria-label="Legal documents">
+      <a href="{{ '/legal/privacy/' | relative_url }}"{% if page.url contains '/privacy' %} class="is-active" aria-current="page"{% endif %}>Privacy</a>
+      <a href="{{ '/legal/terms/' | relative_url }}"{% if page.url contains '/terms' %} class="is-active" aria-current="page"{% endif %}>Terms</a>
+      <a href="{{ '/legal/cookies/' | relative_url }}"{% if page.url contains '/cookies' %} class="is-active" aria-current="page"{% endif %}>Cookies</a>
+    </nav>
+
+    <div class="legal-body prose">
+      {{ content }}
+    </div>
+
+    <footer class="legal-foot">
+      <p>
+        Questions about this document? Email
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+      </p>
+    </footer>
+  </div>
+</article>
