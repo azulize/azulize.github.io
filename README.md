@@ -111,7 +111,7 @@ automatically.
   **auto-renewing subscription (monthly / yearly)**, processed by **Apple** and
   managed with **[RevenueCat](https://www.revenuecat.com/)** (`purchases-ios` 5.x).
   - Offering: Monthly (`$rc_monthly`, `P1M`, $5.99), Yearly (`$rc_annual`, `P1Y`,
-    $59.99), both with a 7-day free trial.
+    $45.99), both with a 7-day free trial.
   - RevenueCat acts as our processor. It receives a random app-user ID, purchase
     history and receipts, device type and OS, last use, and locale and currency.
     The SDK starts only when an adult opens the subscription screen or taps restore,
