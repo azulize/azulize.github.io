@@ -1,5 +1,5 @@
 # =============================================================================
-#  Azulize catalog — 18 apps, one mechanic per app.
+#  Azulize catalog — 21 apps, one mechanic per app.
 #
 #  tier:         groups the app on the homepage (see _data/tiers.yml)
 #  ages:         parent-facing age range, shown as a badge
@@ -170,6 +170,18 @@
   appstore_url: ""
   gradient: ["#8FCB5A", "#6FAE3C"]
 
+- name: Kids Pixel
+  tier: puzzles-logic
+  emoji: "🟦"
+  mechanic: Color by square
+  ages: "3–7"
+  tagline: Pictures, square by square
+  description: >-
+    Rebuild a picture on an 8×8 grid using only its own colors. 320 pictures
+    across eight themes, with numbered squares for beginners and a challenge mode.
+  appstore_url: ""
+  gradient: ["#6A8DF0", "#4567D3"]
+
 # ---- Pretend play -----------------------------------------------------------
 - name: Kids Doctor
   tier: pretend-play
@@ -219,6 +231,30 @@
     sight. Sixty puzzles across three themed adventures.
   appstore_url: ""
   gradient: ["#5B6BB8", "#3B4A93"]
+
+- name: Kids Fold
+  tier: bigger-kids
+  emoji: "🦢"
+  mechanic: Step-by-step folding
+  ages: "7+"
+  tagline: Fold it, step by step
+  description: >-
+    Origami, plus the napkin and towel animals from hotel beds. Thirty models
+    across six themes, with one clear diagram per step and no timer.
+  appstore_url: ""
+  gradient: ["#6FB7C9", "#3F8CA3"]
+
+- name: Kids Chess
+  tier: bigger-kids
+  emoji: "♟️"
+  mechanic: Pre-chess puzzles
+  ages: "5–8"
+  tagline: The step before chess
+  description: >-
+    Learn how each piece moves through 214 puzzle levels, then move on to
+    captures, first checkmates and a friendly duel. Most modes have no opponent.
+  appstore_url: ""
+  gradient: ["#7A6A58", "#51453A"]
 
 # ---- Learning to read -------------------------------------------------------
 - name: Kids Words

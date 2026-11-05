@@ -2,13 +2,13 @@
 layout: legal
 title: Terms &amp; Conditions
 permalink: /legal/terms/
-last_updated: 2026-07-28
+last_updated: 2026-11-05
 summary: >-
   The rules for using our apps and this website. In plain terms: enjoy the
   apps, don't misuse them, and remember they're provided for family use.
 description: >-
   Terms & Conditions for Azulize LLC's apps and azulize.com,
-  including license, in-app purchases, and governing law.
+  including license, subscriptions, and governing law.
 ---
 
 ## 1. Agreement to these Terms
@@ -47,26 +47,28 @@ You agree **not** to:
 - remove or alter any copyright, trademark or other proprietary notices;
 - use the Apps in any unlawful way or in violation of these Terms.
 
-## 4. Purchases and subscriptions
+## 4. Subscriptions
 
-Some Apps offer optional in-app purchases to unlock the full version. Depending
-on the App, these may include **auto-renewing subscriptions** (monthly or yearly)
-and a **one-time** purchase. The free tier is always a complete, calm experience
-— buying is entirely optional.
+Our Apps are free to download and include free content. The full version of an
+App is unlocked with an optional **auto-renewing subscription**, billed monthly or
+yearly. The price and billing period are shown before you confirm.
 
-- **Apple processes payment.** Pricing, taxes, billing and receipts are handled
-  through your Apple Account, not by us.
-- **We use RevenueCat** to manage entitlements and restore purchases across your
-  devices. See our [Privacy Policy]({{ '/legal/privacy/' | relative_url }}) for
+- **Apple processes payment.** Payment is charged to your Apple Account when you
+  confirm the purchase. Taxes, billing and receipts are handled by Apple, not by
+  us.
+- **We use RevenueCat** to manage entitlements and restore subscriptions across
+  your devices. See our [Privacy Policy]({{ '/legal/privacy/' | relative_url }}) for
   what that involves.
-- **Auto-renewal.** Subscriptions renew automatically at the end of each period
-  unless cancelled at least 24 hours before the period ends. You can manage or
+- **Auto-renewal.** Subscriptions renew automatically, and your Apple Account is
+  charged for the next period, unless cancelled at least 24 hours before the
+  current period ends. Deleting an App does not cancel its subscription. You can
+  manage or
   cancel anytime in your device Settings under your Apple Account; the
   subscription stays active until the end of the current period.
 - **Behind a parental gate.** Purchases and any external links sit behind a
   parental gate, so a child cannot buy or navigate away without an adult.
-- **Restoring purchases:** a previous purchase can be restored on your devices
-  using the App's "Restore Purchases" option.
+- **Restoring:** an active subscription can be restored on your devices from the
+  App's Parents Area.
 - **Refunds** are handled by Apple in accordance with App Store policy. To
   request one, use Apple's process at
   [reportaproblem.apple.com](https://reportaproblem.apple.com). We are generally
@@ -123,7 +125,8 @@ the updated Terms.
 ## 11. Governing law
 
 These Terms are governed by the laws of the **{{ site.company.country }}** and,
-where applicable, the state in which Azulize is organized, without regard to
+where applicable, the State of **{{ site.company.state }}**, where Azulize is
+organized, without regard to
 conflict-of-laws rules. To the extent a dispute is not subject to Apple's EULA or
 App Store terms, you agree that it will be resolved in a court of competent
 jurisdiction in the United States, and you consent to its jurisdiction. Nothing in
@@ -132,5 +135,5 @@ live.
 
 ## 12. Contact us
 
-**{{ site.company.legal_name }}**
+**{{ site.company.legal_name }}**, {{ site.company.address }}<br>
 Email: [{{ site.email }}](mailto:{{ site.email }})

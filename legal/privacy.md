@@ -2,27 +2,29 @@
 layout: legal
 title: Privacy Policy
 permalink: /legal/privacy/
-last_updated: 2026-07-28
+last_updated: 2026-11-05
 summary: >-
-  The short version: our apps are built for children, and we do not collect
-  personal information from anyone. No accounts, no ads, no trackers.
+  The short version: no ads, no accounts, no tracking, and no data sold. Game
+  progress stays on the device. The only data that leaves it is what we need to
+  check, sell and restore subscriptions, linked to a random ID rather than a name.
 description: >-
-  Azulize LLC Privacy Policy for the Azulize apps and azulize.com. We do not
-  collect personal information, use no third-party analytics and serve no ads.
+  Azulize LLC Privacy Policy for the Azulize apps and azulize.com: what is
+  processed to manage subscriptions through Apple and RevenueCat, why, for how
+  long, and your rights under the GDPR, UK GDPR and COPPA.
 ---
 
-## Our privacy promise
+## Who we are
 
 {{ site.company.legal_name }} ("**Azulize**", "**we**", "**us**") makes calm,
-ad-free apps for children. We designed our apps to
-be privacy-first: **no ads, no tracking, and no personal information collected
-from you or your child.** The one exception is the purchase information needed to
-sell and restore optional upgrades, which is handled by Apple and our purchase
-provider — never for advertising. This policy explains exactly what that means.
+ad-free apps for children. We are the **data controller** for the processing
+described in this policy, which applies to our mobile apps (the "**Apps**") and
+to this website, [www.azulize.com]({{ site.url }}).
 
-This Privacy Policy explains what that means in practice. It applies to our
-mobile apps (together, the "**Apps**") and to this website,
-[www.azulize.com]({{ site.url }}).
+**{{ site.company.legal_name }}**, {{ site.company.address }}<br>
+Email: [{{ site.email }}](mailto:{{ site.email }})
+{% if site.company.eu_representative %}
+**EU representative (GDPR Article 27):** {{ site.company.eu_representative }}
+{% endif %}
 
 ### Apps covered by this policy
 
@@ -33,121 +35,195 @@ This policy covers every app we publish, including:
 
 New apps are covered by this policy from the day they launch.
 
-## Information we do **not** collect
+## What we do **not** collect
 
-Our Apps are designed to work without any personal information. We do **not**
-collect, request, or require:
+Our Apps have no ads, no accounts and no analytics. We do **not** collect,
+request or require:
 
-- Names, email addresses, phone numbers or postal addresses;
+- Names, email addresses, phone numbers or postal addresses, inside the Apps;
 - Accounts, usernames, passwords or logins;
-- Photos, contacts, microphone or camera access;
-- Precise or approximate location;
+- Photos, contacts, or microphone or camera access;
+- Precise location;
 - Advertising identifiers (such as Apple's IDFA);
-- Persistent identifiers used to track a child across apps or over time;
-- Any behavioral profile or history that could identify a child.
+- Any behavioral profile of a child, or any information about what a child does
+  in the games.
 
-There are **no third-party advertising networks** and **no third-party
-analytics or tracking SDKs** in our Apps. The only third-party service our Apps
-use is **RevenueCat**, solely to manage the optional purchases described below.
+There are **no advertising networks** and **no analytics or tracking SDKs** in our
+Apps. We never sell personal data, and we never use it for advertising.
 
 ## Information stored only on the device
 
-To make the Apps work, some information is saved **locally on your device** and
-is **never transmitted to us or anyone else**:
+Some information is saved **locally on your device**, and we have no way to
+access it:
 
 - Game progress (for example, which pictures a child has completed);
-- App preferences (for example, whether background music is on or off);
-- Whether the full version has been unlocked on this device.
+- App preferences (for example, whether background music is on or off).
 
-This information stays on the device. It is removed when you delete the App, and
-we have no way to access it.
+It is removed when you delete the App.
 
-## Purchases and subscriptions
+## The data that does leave the device
 
-Some Apps offer optional in-app purchases to unlock the full version. Depending
-on the App, these may include **auto-renewing subscriptions** (monthly or yearly)
-and a **one-time** purchase. Buying is always optional — the free tier is a
-complete, calm experience.
+### Subscription data, through RevenueCat
 
-- **Apple processes the payment.** Your name, address and card details go to
-  Apple, never to us. Apple's handling is governed by
-  [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
-- **We use RevenueCat to manage purchases.** To unlock the right features,
-  validate a purchase, and restore it across your devices, we use
-  [RevenueCat](https://www.revenuecat.com/) as our service provider. On our
-  behalf, RevenueCat processes a randomly-generated app identifier, your purchase
-  and receipt information, and basic technical data (such as country and device
-  type). This is used **only** to deliver, restore and support purchases — it is
-  **never** used for advertising and **never** to track your child across other
-  apps or websites. See
-  [RevenueCat's Privacy Policy](https://www.revenuecat.com/privacy/).
-- **Purchases sit behind a parental gate.** A child cannot start a purchase, or
-  reach any link that leaves the App, without an adult solving a simple gate.
+To sell the optional subscription and to know whether it is active, our Apps use
+[RevenueCat](https://www.revenuecat.com/), a service provider that acts on our
+behalf as a **data processor**.
 
-You can manage or cancel a subscription at any time in your device's Settings,
-under your Apple Account.
+**This happens whenever an App opens with an internet connection, even if nobody
+has ever bought anything,** because the App has to check for an active
+subscription and load the available plans. With no connection, nothing is sent
+and the games still work.
+
+| Data | Why it is needed |
+|---|---|
+| A random app user ID, generated by the App | To link a subscription to this installation. It does not contain a name or an email address, and it is not used across other companies' apps. |
+| Purchase history and the Apple receipt (product, dates, transaction identifiers) | To validate, unlock, renew and restore a subscription. |
+| Device type and operating system version | To operate the service and troubleshoot it. |
+| Last time the App was used | Kept by RevenueCat as part of the subscriber record. |
+| Locale and currency code | To show the right plans and prices. |
+| IP address, as part of the internet connection | Needed for any connection to reach a server. We do not receive it or use it to locate anyone. |
+
+We do not send RevenueCat any name, email address or information about gameplay.
+We can view these records in RevenueCat's dashboard. See
+[RevenueCat's Privacy Policy](https://www.revenuecat.com/privacy/).
+
+### Payment data, through Apple
+
+**Apple takes the payment.** Your name, address and card details go to Apple and
+never reach us. Apple acts as an independent controller under
+[its own Privacy Policy](https://www.apple.com/legal/privacy/). The sales reports
+we get from Apple do not identify you.
+
+### Emails you send us
+
+If you write to us, we process your email address and whatever you include in your
+message, in order to reply.
+
+### This website
+
+This website is a static information page hosted on **GitHub Pages** (GitHub,
+Inc.). We run no analytics, set no advertising cookies and embed no third-party
+trackers. GitHub's servers may log technical data, such as IP addresses, for
+security and to deliver the page; see GitHub's
+[Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)
+and our [Cookie Policy]({{ '/legal/cookies/' | relative_url }}).
+
+## Why we process it, and our legal basis
+
+This section applies where the EU or UK GDPR applies to you.
+
+| Purpose | Legal basis |
+|---|---|
+| Selling, validating, renewing and restoring a subscription you choose to buy | Performance of a contract, Article 6(1)(b) |
+| Checking whether an App has an active subscription, and loading plans, before any purchase | Our legitimate interest in running the Apps and their paid features with as little data as possible, Article 6(1)(f) |
+| Replying to your messages | Our legitimate interest in supporting our users, Article 6(1)(f), or the contract where your message concerns a subscription, Article 6(1)(b) |
+| Serving and securing this website | Our legitimate interest in keeping the site available and safe, Article 6(1)(f) |
+| Keeping records that the law requires | Legal obligation, Article 6(1)(c) |
+
+We do not rely on a child's consent for any of this. We make **no automated
+decisions** that have legal or similarly significant effects on you.
+
+You don't have to give us any data to play: without a connection, or without a
+subscription, the free content still works. A subscription can't be sold or
+restored without the subscription data described above.
+
+## Who receives it
+
+We share data only with the service providers that make the above possible:
+
+- **Apple**, for payments and the App Store.
+- **RevenueCat, Inc.**, 1032 E Brandon Blvd #3003, Brandon, FL 33511, USA, which
+  hosts data with Amazon Web Services in the United States and uses its own
+  subprocessors under its
+  [data processing agreement](https://www.revenuecat.com/dpa/).
+- **GitHub, Inc.**, for hosting this website.
+- **Our email provider**, for messages you send us.
+
+We may also disclose information if the law requires it. We never share data with
+advertisers or data brokers.
+
+## International transfers
+
+Azulize is based in the {{ site.company.country }}, and RevenueCat processes data
+there. If you are in the EU, the UK or Switzerland, your data is therefore
+transferred to the United States. These transfers rely on the European
+Commission's **Standard Contractual Clauses**, and their UK and Swiss equivalents,
+in our data processing agreement with RevenueCat. You can ask us for a copy of
+these safeguards.
+
+## How long we keep it
+
+- **Subscription data:** while it is needed to manage and restore the subscription
+  and for as long as we use RevenueCat, unless you ask us to delete it sooner.
+  RevenueCat deletes or returns it when our agreement ends.
+- **Emails:** for as long as needed to resolve your request and any follow-up.
+- **Records the law requires us to keep:** for the period that law sets.
+- **On-device data:** until you delete the App.
 
 ## Children's privacy (COPPA and beyond)
 
-Our Apps are intended for children and families, and we take that
-responsibility seriously.
+Our Apps are made for children and families, and we take that responsibility
+seriously. The Apps ask children for no personal details, show them no ads and
+don't profile them.
 
-We do not knowingly collect personal information from children under 13 (or the
-equivalent age in your country). Our Apps ask for no personal details, and the
-only data ever processed is the purchase information described above — initiated
-by an adult, behind the parental gate, solely to manage purchases. Our practices
-are designed to align with the U.S. Children's Online Privacy Protection Act
-(**COPPA**), Apple's **Kids Category** guidelines, and the principles behind the
-EU/UK GDPR "age-appropriate design" rules.
+The random ID described above is a persistent identifier. We use it only to
+support the internal operation of the App, which means checking, delivering and
+restoring the subscription. We do not use it to contact anyone, to advertise or
+to build a profile. Purchases, and any link that leaves the App, sit behind a
+parental gate, so that an adult makes those decisions.
 
-If you believe a child has somehow provided us with personal information, please
-email us at [{{ site.email }}](mailto:{{ site.email }}) and we will address it
-promptly.
+We do not knowingly collect any other personal information from children under 13,
+or the equivalent age in your country. Our practices are designed to align with
+the U.S. Children's Online Privacy Protection Act (**COPPA**), Apple's **Kids
+Category** guidelines, and the GDPR's protections for children.
 
-## The website
-
-This website is a simple, static information page hosted on **GitHub Pages**
-(GitHub, Inc.). We do not run our own analytics, set advertising cookies, or
-embed third-party trackers. As with any website, GitHub's servers may
-automatically log basic technical data (such as IP addresses) for security and
-to deliver the page; see GitHub's
-[Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)
-and our own [Cookie Policy]({{ '/legal/cookies/' | relative_url }}) for details.
-
-## How we share information
-
-We do not sell or rent personal information, and we never share it with
-advertisers or data brokers. The only sharing that happens is with **Apple** and
-**RevenueCat**, strictly to process and restore the purchases you choose to make,
-as described in "Purchases and subscriptions" above.
-
-## Data security
-
-The best protection for personal data is not to collect it, and that is our
-approach. Any information created by the Apps stays on your own device, under
-your control.
-
-## International users
-
-Azulize is based in the {{ site.company.country }}. The
-Apps can be used worldwide. Because we do not collect personal information, there
-is no personal data to transfer across borders.
+Parents and guardians can ask us at any time to review or delete data relating to
+their child, using the contact details below. Deleting the App stops any further
+processing on that device. If you believe a child has sent us personal
+information, for example by email, tell us and we will delete it.
 
 ## Your rights
 
-Since we hold no personal information about you or your child, there is nothing
-for us to access, correct, or delete on our servers. You remain fully in control
-of the on-device information, which you can erase at any time by deleting the App.
+Under the EU and UK GDPR, you have the right to:
+
+- **access** your personal data and receive a copy;
+- **rectify** inaccurate data;
+- **erase** your data;
+- **restrict** how we process it;
+- **receive** the data you gave us in a portable format;
+- **object** to processing based on our legitimate interests;
+- **complain** to a data protection authority, such as the one where you live or
+  work. In Spain this is the
+  [AEPD](https://www.aepd.es/), and in the UK the
+  [ICO](https://ico.org.uk/).
+
+Residents of some U.S. states have similar rights under their state's law, and we
+honor these requests in the same way. We do not sell personal data, or share it
+for targeted advertising.
+
+**How to use your rights:** email [{{ site.email }}](mailto:{{ site.email }}). The
+Apps have no accounts and the ID is random, so we can't find your record from a
+name or an email address. Please include the App's name and the order ID from your
+Apple receipt. We reply within one month. Exercising your rights is free.
+
+**To stop the processing yourself:** delete the App, which also removes its random
+ID from the device. To stop paying, cancel the subscription in your device's
+Settings, under your Apple Account. Deleting the App does not cancel it.
+
+## Data security
+
+We keep data to a minimum: that is our best protection. Connections to RevenueCat
+are encrypted, and game progress never leaves your device.
 
 ## Changes to this policy
 
-If we ever change how our Apps handle information, we will update this page and
-revise the "Last updated" date above. Meaningful changes will be reflected here
-before they take effect.
+If we change how our Apps handle information, we will update this page and revise
+the "Last updated" date above. Meaningful changes will be reflected here before
+they take effect.
 
 ## Contact us
 
 Questions about privacy? We'd love to hear from you.
 
-**{{ site.company.legal_name }}**
+**{{ site.company.legal_name }}**, {{ site.company.address }}<br>
 Email: [{{ site.email }}](mailto:{{ site.email }})

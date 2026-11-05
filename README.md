@@ -19,7 +19,7 @@ studio that makes calm, ad-free, kid-safe apps for iPad and iPhone
 | Brand | Azulize |
 | Mascot | Milo |
 | Registered | **United States** |
-| Founded | 2025 |
+| Founded | 2023 |
 | Contact | support@azulize.com |
 | Domain | www.azulize.com |
 
@@ -45,7 +45,7 @@ copy is maintained in one place instead of per app.
 
 ---
 
-## The catalog — 18 apps, 6 tiers
+## The catalog — 21 apps, 6 tiers
 
 One focused mechanic per app. Source of truth: [`_data/games.yml`](_data/games.yml)
 (grouping order in [`_data/tiers.yml`](_data/tiers.yml)). Add or edit an app in
@@ -76,6 +76,7 @@ automatically.
 | 🧪 Kids Sort | Water sort | 4–7 |
 | 🫧 Kids Pop | Arcade | 3–6 |
 | ⚪ Kids Tilt | Marble maze | 4–7 |
+| 🟦 Kids Pixel | Color by square | 3–7 |
 
 ### Pretend play — _imaginative role-play_
 | App | Mechanic | Ages |
@@ -88,6 +89,8 @@ automatically.
 | App | Mechanic | Ages |
 |---|---|---|
 | 🧮 Kids Sudoku | Sudoku | 6+ |
+| 🦢 Kids Fold | Step-by-step folding | 7+ |
+| ♟️ Kids Chess | Pre-chess puzzles | 5–8 |
 
 ### Learning to read — _our most educational title_
 | App | Mechanic | Ages |
@@ -102,20 +105,23 @@ automatically.
 
 ## Privacy & purchases model (reflected in the legal pages)
 
-- **No ads, no analytics, no tracking SDKs**, no accounts, no personal data
-  collected from children or adults.
-- **Purchases & subscriptions** are the one exception: some apps offer optional
-  in-app purchases — **auto-renewing subscriptions (monthly / yearly)** and a
-  **one-time** option — processed by **Apple** and managed with
-  **[RevenueCat](https://www.revenuecat.com/)** (`purchases-ios` 5.x).
-  - Offering tiers: Monthly (`$rc_monthly`, `P1M`), Yearly (`$rc_annual`, `P1Y`),
-    One-time (`$rc_lifetime`, non-consumable).
-  - RevenueCat processes only a random app-user ID, receipt/purchase info and
-    basic device data to deliver and restore purchases — never for advertising
+- **No ads, no analytics, no tracking SDKs**, no accounts. Game progress stays on
+  the device.
+- **Subscriptions only**: the full version of each app is an optional
+  **auto-renewing subscription (monthly / yearly)**, processed by **Apple** and
+  managed with **[RevenueCat](https://www.revenuecat.com/)** (`purchases-ios` 5.x).
+  - Offering: Monthly (`$rc_monthly`, `P1M`), Yearly (`$rc_annual`, `P1Y`).
+  - RevenueCat acts as our processor. It receives a random app-user ID, purchase
+    history and receipts, device type and OS, last use, and locale and currency.
+    The SDK contacts it **every time an app opens with a connection**, even with no
+    purchase, so the Privacy Policy states that. It is never used for advertising
     or cross-app tracking.
   - All purchases and outbound links sit **behind a parental gate**.
 - Designed to align with **COPPA**, Apple's **Kids Category** guidelines and
-  GDPR "age-appropriate design" principles.
+  GDPR protections for children. The Privacy Policy holds the GDPR disclosures
+  (controller, legal bases, recipients, transfers, retention, rights); set
+  `company.eu_representative` in `_config.yml` once an Article 27 representative
+  is appointed.
 
 ---
 
@@ -147,7 +153,7 @@ automatically.
 ├── 404.html               # Milo "not found" page
 ├── robots.txt             # Renders Sitemap URL
 ├── _data/
-│   ├── games.yml          # The 18 apps
+│   ├── games.yml          # The 21 apps
 │   └── tiers.yml          # The 6 catalog tiers
 ├── _includes/
 │   ├── head.html          # SEO tag, favicon, styles
@@ -209,4 +215,4 @@ HTTPS** enabled.
 
 ## License
 
-© 2025 Azulize LLC. All rights reserved.
+© 2023 Azulize LLC. All rights reserved.
