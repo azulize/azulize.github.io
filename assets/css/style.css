@@ -305,6 +305,8 @@ a:hover { text-decoration-color: currentColor; }
   padding: clamp(26px, 4vw, 48px); box-shadow: var(--shadow-sm);
 }
 .legal-foot { text-align: center; margin-top: 24px; color: var(--muted); font-size: 0.95rem; }
+.legal-container .contact-card { max-width: none; margin-top: 28px; }
+.legal-body [id] { scroll-margin-top: 90px; }
 
 /* Prose ------------------------------------------------------------------- */
 .prose { color: var(--body); }
