@@ -110,12 +110,14 @@ automatically.
 - **Subscriptions only**: the full version of each app is an optional
   **auto-renewing subscription (monthly / yearly)**, processed by **Apple** and
   managed with **[RevenueCat](https://www.revenuecat.com/)** (`purchases-ios` 5.x).
-  - Offering: Monthly (`$rc_monthly`, `P1M`), Yearly (`$rc_annual`, `P1Y`).
+  - Offering: Monthly (`$rc_monthly`, `P1M`, $5.99), Yearly (`$rc_annual`, `P1Y`,
+    $59.99), both with a 7-day free trial.
   - RevenueCat acts as our processor. It receives a random app-user ID, purchase
     history and receipts, device type and OS, last use, and locale and currency.
-    The SDK contacts it **every time an app opens with a connection**, even with no
-    purchase, so the Privacy Policy states that. It is never used for advertising
-    or cross-app tracking.
+    The SDK starts only when an adult opens the subscription screen or taps restore,
+    or at launch on a device with subscription history, for Apple's Guideline 1.3.
+    The Privacy Policy states this, so keep it in step with `StoreManager`. It is
+    never used for advertising or cross-app tracking.
   - All purchases and outbound links sit **behind a parental gate**.
 - Designed to align with **COPPA**, Apple's **Kids Category** guidelines and
   GDPR protections for children. The Privacy Policy holds the GDPR disclosures

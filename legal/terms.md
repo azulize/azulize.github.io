@@ -59,6 +59,10 @@ yearly. The price and billing period are shown before you confirm.
 - **We use RevenueCat** to manage entitlements and restore subscriptions across
   your devices. See our [Privacy Policy]({{ '/legal/privacy/' | relative_url }}) for
   what that involves.
+- **Free trial.** A subscription may start with a free trial, shown before you
+  confirm, if you are eligible. It becomes a paid subscription when the trial ends,
+  and your Apple Account is charged, unless you cancel at least 24 hours before
+  then.
 - **Auto-renewal.** Subscriptions renew automatically, and your Apple Account is
   charged for the next period, unless cancelled at least 24 hours before the
   current period ends. Deleting an App does not cancel its subscription. You can

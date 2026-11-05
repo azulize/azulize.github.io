@@ -69,10 +69,13 @@ To sell the optional subscription and to know whether it is active, our Apps use
 [RevenueCat](https://www.revenuecat.com/), a service provider that acts on our
 behalf as a **data processor**.
 
-**This happens whenever an App opens with an internet connection, even if nobody
-has ever bought anything,** because the App has to check for an active
-subscription and load the available plans. With no connection, nothing is sent
-and the games still work.
+**This does not happen just by opening an App.** On a device with no subscription
+history, the App contacts RevenueCat only once an adult has passed the parental
+gate and opens the subscription screen or taps restore. After a subscription has
+been active on the device, or a purchase is waiting for approval through Ask to
+Buy, the App also contacts RevenueCat each time it opens with an internet
+connection, to check whether the subscription is still active. With no connection,
+nothing is sent and the games still work.
 
 | Data | Why it is needed |
 |---|---|
@@ -115,7 +118,7 @@ This section applies where the EU or UK GDPR applies to you.
 | Purpose | Legal basis |
 |---|---|
 | Selling, validating, renewing and restoring a subscription you choose to buy | Performance of a contract, Article 6(1)(b) |
-| Checking whether an App has an active subscription, and loading plans, before any purchase | Our legitimate interest in running the Apps and their paid features with as little data as possible, Article 6(1)(f) |
+| Loading plans when an adult opens the subscription screen, before any purchase | Our legitimate interest in running the Apps and their paid features with as little data as possible, Article 6(1)(f) |
 | Replying to your messages | Our legitimate interest in supporting our users, Article 6(1)(f), or the contract where your message concerns a subscription, Article 6(1)(b) |
 | Serving and securing this website | Our legitimate interest in keeping the site available and safe, Article 6(1)(f) |
 | Keeping records that the law requires | Legal obligation, Article 6(1)(c) |
